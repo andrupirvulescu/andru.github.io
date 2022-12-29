@@ -1,0 +1,71 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #dbd7db;
+  display: flex;
+  flex-direction: column;
+}
+#content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+#main {
+  flex: 2;
+}
+#side-menu {
+  flex: 1;
+}
+td {
+  color: darkblue;
+  border-color: aquamarine;
+}
+#subscriberEmail {
+  color: brown;
+  background: yellow;
+}
+#jobtitle {
+  text-align: center;
+  color: rgb(26, 26, 207);
+}
+.favorite {
+  font-weight: bold;
+}
+
+.page {
+  border-radius: 0.8rem;
+  border: 2px solid #c9c9c9;
+  background: #d2d9f0;
+  padding: 0 10px 0 10px;
+}
+.KNW {
+  background: lightblue;
+  margin-bottom: 10px;
+  border: 2px dashed red;
+}
+
+#top-menu-bar {
+  text-align: center;
+  background-color: #334455;
+  color: #fff;
+  margin: 0;
+}
+#top-menu-bar li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#top-menu-bar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 8px;
+  display: inline-block;
+}
+#top-menu-bar a:hover {
+  color: #334455;
+  background: #fff;
+}

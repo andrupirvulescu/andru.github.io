@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Pirvulescu Andrei</h1>
+      <img src="MTM.png" height="50" />
+
+      <h2 id="jobtitle">Consilier vanzari@AeroportInternationalSibiu</h2>
+
+      <p style="color: red; text-align: center">
+        <strong>Welcome</strong> to my site
+      </p>
+
+      <ul id="top-menu-bar">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SKILLS</a></li>
+        <li><a href="#">KNOWN LANGUAGES</a></li>
+        <li><a href="#">PROJECTS</a></li>
+      </ul>
+    </header>
+
+    <section id="content">
+      <div id="side-menu">
+        <section>
+          <form action="">
+            <div>
+              <label for="subscriberEmail">Enter your Email</label>
+              <input
+                type="email"
+                required
+                name="email"
+                id="subscriberEmail"
+                placeholder="your@email.com"
+              />
+            </div>
+            <div>
+              <label for="subscriber">Name</label>
+              <input
+                type="text"
+                required
+                name="nume"
+                id="Subscribe"
+                name="full name"
+              />
+            </div>
+            <button type="submit">Subscribe</button>
+          </form>
+        </section>
+        <section>To do</section>
+      </div>
+      <div id="main">
+        <div class="page">
+          <h2>Skills</h2>
+          <ol id="Skills-list"></ol>
+        </div>
+        <div class="KNW">
+          <h2>Known languages</h2>
+          <table border="1">
+            <tbody>
+              <tr>
+                <th>Language</th>
+                <th>Level</th>
+              </tr>
+              <tr>
+                <td>Romanian</td>
+                <td>native</td>
+              </tr>
+              <tr>
+                <td>english</td>
+                <td>Proeficient</td>
+              </tr>
+              <tr>
+                <td>french</td>
+                <td>proeficient</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a href="http://www.google.com/">GOOGLE</a>
+    </footer>
+    <script src="index.js"></script>
+
+    <script>
+      console.info("page loaded");
+      console.debug(2 + 3);
+      console.warn(2 * (3 + 1));
+
+      var employed = true;
+      console.error(employed);
+
+      var age = 24; //number
+
+      var user = "Andru";
+      user = user + " Pirvulescu ";
+
+      var Skills = ["html", "css", "js"];
+
+      var dan = {
+        age: 26,
+        employed: true,
+      };
+
+      var jobtitle = document.getElementById("job-title");
+    </script>
+  </body>
+</html>
