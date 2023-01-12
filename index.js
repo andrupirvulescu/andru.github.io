@@ -28,20 +28,21 @@ function hide(id) {
 }
 
 function displayHome() {
-  hideAllPages();
-  show("home");
+  displayPage("home");
 }
 function displaySkills() {
-  hideAllPages();
-  show("skills");
+  displayPage("skills");
 }
 function displayLanguages() {
-  hideAllPages();
-  show("languages");
+  displayPage("languages");
 }
 function displayProjects() {
-  hideAllPages();
-  show("projects");
+  displayPage("projects");
 }
 
-displayhome();
+function displayPage(id) {
+  hideAllPages();
+  show(id);
+}
+
+displayPage("home");
