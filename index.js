@@ -7,16 +7,17 @@ var Skills = [
   { name: "DRIVE", endorcements: 2 },
 ];
 
-var SkillsHTML = "";
-
-for (var i = 0; i < Skills.length; ) {
-  SkillsHTML +=
-    " <li>" + Skills[i].name + " - " + Skills[i].endorcements + "</li>";
+//for (var i = 0; i < Skills.length; ) {
+//SkillsHTML +=
+//" <li>" + Skills[i].name + " - " + Skills[i].endorcements + "</li>";
+//i++;
+//}
+var SkillsHTML = Skills.map(function (Skill) {
+  return "<li>" + Skill.name + " - " + Skill.endorcements + "</li>";
   i++;
-}
+});
 
-console.info(SkillsHTML);
-skillsEl.innerHTML = SkillsHTML;
+skillsEl.innerHTML = SkillsHTML.join("");
 
 var pagesIds = ["home", "skills", "languages", "projects", "rubik"];
 
