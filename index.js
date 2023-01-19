@@ -1,11 +1,17 @@
 var skillsEl = document.getElementById("Skills-list");
 
-var Skills = ["HTML", "CSS", "JS", "DRIVE"];
+var Skills = [
+  { name: "HTML", endorcements: 5 },
+  { name: "CSS", endorcements: 4 },
+  { name: "JS", endorcements: 3 },
+  { name: "DRIVE", endorcements: 2 },
+];
 
 var SkillsHTML = "";
 
 for (var i = 0; i < Skills.length; ) {
-  SkillsHTML += " <li>" + Skills[i] + " </li>";
+  SkillsHTML +=
+    " <li>" + Skills[i].name + " - " + Skills[i].endorcements + "</li>";
   i++;
 }
 
